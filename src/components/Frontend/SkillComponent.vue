@@ -24,10 +24,10 @@
           <img src="/storage/skills/mysql.svg" class="lg:h-20" />
         </div>
         <div class="mx-auto flex max-w-xs flex-col gap-y-4 justify-around">
-          <img src="/storage/skills/github.svg" class="lg:h-20" />
+          <img src="/storage/skills/wordpress.svg" class="lg:h-20" />
         </div>
         <div class="mx-auto flex max-w-xs flex-col gap-y-4 justify-around">
-          <img src="/storage/skills/wordpress.svg" class="lg:h-20" />
+          <img src="/storage/skills/github.svg" class="lg:h-20" />
         </div>
       </dl>
     </div>
