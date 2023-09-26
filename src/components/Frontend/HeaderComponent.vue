@@ -8,6 +8,7 @@ const navigations = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Portfolio", href: "#portfolio" },
+  { name: "Contact", href: "#contact" },
 ];
 </script>
 <style scoped>
@@ -61,16 +62,61 @@ const navigations = [
   width: 15px;
   border-radius: 50px 50px 50px 50px;
 }
+
+ul {
+  padding: 0;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+
+ul li a:before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #00bcd4;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+ul li a:after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #f0f;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+ul li a:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+ul li a:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
 </style>
 <template>
   <nav class="bg-light-primary dark:bg-dark-primary border-gray-200 fixed w-full z-20 top-0 left-0">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center">
-        <img src="/storage/images/ig-logo.png" class="h-14 mr-3" alt="Flowbite Logo" />
-        <span
-          class="self-center text-2xl font-semibold whitespace-nowrap text-dark-primary dark:text-light-primary"
-          >ISHER</span
-        >
+        <img src="/storage/images/ig-logo.png" class="h-14 mr-3" alt="IG Logo" />
       </a>
       <div class="grid place-content-center">
         <button content="night" class="LightSwitch" @click="toggleDark()">
@@ -126,7 +172,7 @@ const navigations = [
           <li v-for="(navigation, index) in navigations" :key="index">
             <a
               :href="navigation.href"
-              class="block py-2 pl-3 pr-4 text-dark-primary dark:text-light-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block py-2 pl-3 pr-4 text-dark-primary dark:text-light-primary rounded md:border-0 md:p-0"
               aria-current="page"
             >
               {{ navigation.name }}

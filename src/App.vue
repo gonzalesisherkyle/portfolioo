@@ -7,6 +7,7 @@
       <AboutComponent />
       <SkillComponent />
       <ProjectComponent />
+      <ContactCompnonent />
     </main>
     <!-- footer -->
     <FooterComponent />
@@ -20,6 +21,7 @@ import HeroComponent from "@/components/Frontend/HeroComponent.vue";
 import AboutComponent from "@/components/Frontend/AboutComponent.vue";
 import SkillComponent from "@/components/Frontend/SkillComponent.vue";
 import ProjectComponent from "@/components/Frontend/ProjectComponent.vue";
+import ContactCompnonent from "@/components/Frontend/ContactCompnonent.vue";
 import "@/assets/tailwind.css";
 
 export default {
@@ -31,6 +33,7 @@ export default {
     AboutComponent,
     SkillComponent,
     ProjectComponent,
+    ContactCompnonent,
   },
 };
 </script>
