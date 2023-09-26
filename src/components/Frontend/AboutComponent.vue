@@ -711,12 +711,13 @@ const cardTransform = computed(() => {
             </h2>
             <p class="text-black dark:text-white mb-8 text-base">
               What distinguishes me is not just my technical expertise in PHP and basic
-              understanding of JavaScript, but also my commitment to collaborative working.
+              understanding of JavaScript, but also my
+              <strong>commitment to collaborative working</strong>.
             </p>
             <p class="text-black dark:text-white mb-12 text-base">
-              During my academic career, for example, I played a big part in team projects, relying
-              on excellent communication and motivation to accomplish successful outcomes. I was the
-              lead programmer on our capstone project, which I consider a remarkable accomplishment.
+              During my academic career, I played a big part in team projects, relying on excellent
+              communication and motivation to accomplish successful outcomes. I was the lead
+              programmer on our capstone project, which I consider a remarkable accomplishment.
             </p>
             <div class="button">
               <a
