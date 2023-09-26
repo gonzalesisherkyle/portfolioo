@@ -142,7 +142,7 @@
         </div>
         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
           <div class="relative rounded-lg bg-light-primary dark:bg-dark-primary p-8 sm:p-12">
-            <form netlify>
+            <form name="contact" method="POST" netlify>
               <div class="relative z-0 w-full mb-6 group">
                 <input
                   type="email"
@@ -193,7 +193,7 @@
                   <a
                     class="bg-indigo-500 inline-flex items-center rounded-lg py-4 px-6 text-center text-base font-normal sm:px-10 lg:px-8 xl:px-10"
                   >
-                    Send
+                    <button type="submit">Send</button>
                   </a>
                 </div>
               </div>
