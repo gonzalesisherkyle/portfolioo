@@ -142,7 +142,7 @@
         </div>
         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
           <div class="relative rounded-lg bg-light-primary dark:bg-dark-primary p-8 sm:p-12">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact">
               <div class="relative z-0 w-full mb-6 group">
                 <input
                   type="email"
