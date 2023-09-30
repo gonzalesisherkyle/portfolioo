@@ -113,7 +113,7 @@ img {
             </div>
             <div class="w-full px-3 sm:px-4 xl:w-1/2">
               <div class="relative z-10 my-4">
-                <img src="/storage/images/3.jpg" class="w-full rounded-2xl" />
+                <img src="/storage/images/3.JPG" class="w-full rounded-2xl" />
                 <span class="absolute -right-7 -bottom-7 z-[-1]">
                   <svg
                     width="134"
