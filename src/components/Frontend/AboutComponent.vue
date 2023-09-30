@@ -18,6 +18,10 @@ const cardTransform = computed(() => {
 });
 </script>
 <style scoped>
+img {
+  transform: v-bind(cardTransform);
+  transition: transform 0.25 ease-out;
+}
 .button {
   position: relative;
   display: inline-block;
@@ -100,35 +104,16 @@ const cardTransform = computed(() => {
         <div class="w-full px-4 lg:w-6/12">
           <div class="-mx-3 flex items-center sm:-mx-4" ref="target">
             <div class="w-full px-3 sm:px-4 xl:w-1/2">
-              <div
-                class="py-3 sm:py-4"
-                :style="{
-                  transform: cardTransform,
-                  transition: 'transform 0.25 ease-out',
-                }"
-              >
+              <div class="py-3 sm:py-4">
                 <img src="/storage/images/1.jpg" class="w-full rounded-2xl" />
               </div>
-              <div
-                class="py-3 sm:py-4"
-                :style="{
-                  transform: cardTransform,
-                  transition: 'transform 0.25 ease-out',
-                }"
-              >
+              <div class="py-3 sm:py-4">
                 <img src="/storage/images/2.jpg" class="w-full rounded-2xl" />
               </div>
             </div>
             <div class="w-full px-3 sm:px-4 xl:w-1/2">
               <div class="relative z-10 my-4">
-                <img
-                  src="/storage/images/3.jpg"
-                  class="w-full rounded-2xl"
-                  :style="{
-                    transform: cardTransform,
-                    transition: 'transform 0.25 ease-out',
-                  }"
-                />
+                <img src="/storage/images/3.jpg" class="w-full rounded-2xl" />
                 <span class="absolute -right-7 -bottom-7 z-[-1]">
                   <svg
                     width="134"
