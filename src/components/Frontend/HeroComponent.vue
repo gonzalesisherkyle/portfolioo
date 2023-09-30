@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import { useMouseInElement } from "@vueuse/core";
+
 const target = ref(null);
 
 const { elementX, elementY, isOutside, elementHeight, elementWidth } = useMouseInElement(target);
@@ -37,16 +38,15 @@ const cardTransform = computed(() => {
           <div class="hero-content">
             <p class="text-lg text-accent tex-md mb-[10px]">Hey, I'm Isher! 👋</p>
             <h1
-              class="text-dark mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]"
+              class="text-dark mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[42px] xl:text-[42px]"
             >
-              Web Development <br />
-              is my <br />
-              PASSION.
+              I'm a<br />
+              <p class="glitch lg:text-[75px]">
+                <span aria-hidden="true">Full Stack Developer</span>
+                Full Stack Developer
+                <span aria-hidden="true">Full Stack Developer</span>
+              </p>
             </h1>
-            <p class="text-black dark:text-white mb-8 max-w-[480px] text-base">
-              As a recent graduate with a Bachelor's degree in Information Technology and a passion
-              for web development, I'm excited to kick start my career as a Web developer.
-            </p>
             <ul class="flex flex-wrap items-centers">
               <li>
                 <div class="button">
@@ -61,24 +61,20 @@ const cardTransform = computed(() => {
             </ul>
           </div>
           <div class="socials pt-10">
-            <div class="flex items-center justify-evenly">
+            <div class="flex gap-x-5 justify-start">
               <div class="mr-4 w-auto py-3">
                 <a href="https://www.facebook.com/aysiyer/" target="_blank">
-                  <img
-                    src="/storage/images/social-icons/facebook.svg"
-                    alt="facebook"
-                    class="h-20"
-                  />
+                  <i class="fab fa-facebook"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
                 <a href="https://www.linkedin.com/in/ikmgonzales/" target="_blank">
-                  <img src="/storage/images/social-icons/linkedin.svg" alt="linedin" class="h-20" />
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
                 <a href="https://github.com/gonzalesisherkyle" target="_blank">
-                  <img src="/storage/images/social-icons/github.svg" alt="github" class="h-20" />
+                  <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
@@ -205,6 +201,84 @@ const cardTransform = computed(() => {
 @media (prefers-color-scheme: dark) {
   .button:after {
     background-color: #353839;
+  }
+}
+
+.fab {
+  font-size: 4rem;
+}
+
+.fa-facebook,
+.fa-github,
+.fa-linkedin {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-facebook:focus {
+  color: #4267b2;
+  transform: scale(1.1);
+}
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  color: #0077b5;
+  transform: scale(1.1);
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #c9510c;
+  transform: scale(1.1);
+}
+
+.glitch {
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 500ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translate(-0.04em, -0.03em);
+  opacity: 0.75;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translate(0.04em, 0.03em);
+  opacity: 0.75;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
   }
 }
 </style>
