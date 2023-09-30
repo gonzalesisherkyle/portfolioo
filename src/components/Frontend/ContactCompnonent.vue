@@ -193,7 +193,8 @@
                   <a
                     class="bg-indigo-500 inline-flex items-center rounded-lg py-4 px-6 text-center text-base font-normal sm:px-10 lg:px-8 xl:px-10"
                   >
-                    <button type="submit">Send</button>
+                    <!-- <button type="submit">Send</button> -->
+                    Send
                   </a>
                 </div>
               </div>
