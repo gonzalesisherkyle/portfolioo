@@ -152,49 +152,67 @@
           <div class="relative rounded-lg bg-light-primary dark:bg-dark-primary p-8 sm:p-12">
             <form action="https://formspree.io/f/mrgwoqdb" method="POST" name="contact">
               <div class="relative z-0 w-full mb-6 group">
-                <input
-                  type="email"
-                  name="floating_email"
-                  id="floating_email"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                />
                 <label
-                  for="floating_email"
-                  class="peer-focus:font-medium absolute text-sm text-gray-700 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Email address</label
+                  for="Email"
+                  class="relative block rounded-md border border-black dark:border-white shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
                 >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="w-full peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 text-black dark:text-white"
+                    placeholder="Username"
+                    required
+                  />
+
+                  <span
+                    class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-light-primary dark:bg-dark-primary p-0.5 text-xs text-black dark:text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                  >
+                    Email
+                  </span>
+                </label>
               </div>
               <div class="relative z-0 w-full mb-6 group">
-                <input
-                  type="text"
-                  name="floating_full_name"
-                  id="floating_full_name"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                />
                 <label
-                  for="floating_full_name"
-                  class="peer-focus:font-medium absolute text-sm text-gray-700 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Full name</label
+                  for="Name"
+                  class="relative block rounded-md border border-black dark:border-white shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
                 >
+                  <input
+                    type="text"
+                    name="full_name"
+                    id="full_name"
+                    class="w-full peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 text-black dark:text-white"
+                    placeholder="Name"
+                    required
+                  />
+
+                  <span
+                    class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-light-primary dark:bg-dark-primary p-0.5 text-xs text-black dark:text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                  >
+                    Name
+                  </span>
+                </label>
               </div>
               <div class="relative z-0 w-full mb-6 group">
-                <textarea
-                  type="text"
-                  name="floating_message"
-                  id="floating_message"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                />
                 <label
-                  for="floating_message"
-                  class="peer-focus:font-medium absolute text-sm text-gray-700 dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Message</label
+                  for="Message"
+                  class="relative block rounded-md border border-black dark:border-white shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
                 >
+                  <textarea
+                    type="text"
+                    name="message"
+                    id="message"
+                    class="w-full peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 text-black dark:text-white"
+                    placeholder="Message"
+                    required
+                  />
+
+                  <span
+                    class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-light-primary dark:bg-dark-primary p-0.5 text-xs text-black dark:text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                  >
+                    Message
+                  </span>
+                </label>
               </div>
               <div
                 class="g-recaptcha-response"
