@@ -78,7 +78,7 @@
       <div class="-mx-4 flex flex-wrap lg:justify-between">
         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
           <div class="mb-12 max-w-[570px] lg:mb-0">
-            <span class="text-accent mb-4 block text-base font-semibold"> Contact Me </span>
+            <span class="text-accent mb-4 block text-base font-semibold"> Contact Me 📞</span>
             <h2
               class="text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
             >
@@ -142,7 +142,7 @@
         </div>
         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
           <div class="relative rounded-lg bg-light-primary dark:bg-dark-primary p-8 sm:p-12">
-            <form name="contact">
+            <form action="https://formspree.io/f/mrgwoqdb" method="POST" name="contact">
               <div class="relative z-0 w-full mb-6 group">
                 <input
                   type="email"
