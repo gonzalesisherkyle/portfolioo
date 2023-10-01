@@ -59,6 +59,14 @@
     background-color: #353839;
   }
 }
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
 </style>
 <template>
   <section
@@ -188,6 +196,10 @@
                   >Message</label
                 >
               </div>
+              <div
+                class="g-recaptcha-response"
+                data-sitekey="6LdJW2ooAAAAAJL0iElqcF1SlyrhvBQdVFyvEHLE"
+              ></div>
               <div class="relative z-0 w-full mb-6 group">
                 <div class="button">
                   <a
@@ -1000,6 +1012,13 @@
 window.onbeforeunload = () => {
   for (const form of document.getElementsByTagName("form")) {
     form.reset();
+  }
+};
+
+window.onload = function () {
+  var el = document.getElementById("g-recaptcha-response");
+  if (el) {
+    el.setAttribute("required", "required");
   }
 };
 </script>
