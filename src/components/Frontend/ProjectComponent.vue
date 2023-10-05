@@ -38,7 +38,7 @@
                 </a>
               </h3>
               <a
-                href="#"
+                href="https://ojtis-test.puptaguigcs.net/"
                 class="text-blue-500 inline-block rounded-full border border-white dark:border-black py-2 px-7 text-base font-medium transition hover:text-blue-800"
               >
                 Visit site
