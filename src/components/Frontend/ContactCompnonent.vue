@@ -1,63 +1,66 @@
 <style scoped>
-.button {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
+button.main {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #c7d2fe;
+  border: 2px solid #6366f1;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-.button a {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(99 102 241);
-  display: block;
-  position: relative;
-  padding: 20px 40px;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 1px 0px #000;
-  filter: dropshadow(color=#000, offx=0px, offy=1px);
-
-  -webkit-box-shadow: inset 0 1px 0 rgb(79 70 229), 0 10px 0 rgb(79 70 229);
-  -moz-box-shadow: inset 0 1px 0 rgb(79 70 229), 0 10px 0 rgb(79 70 229);
-  box-shadow: inset 0 1px 0 rgb(79 70 229), 0 10px 0 rgb(79 70 229);
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.button a:active {
-  top: 10px;
-  background-color: rgb(109 40 217);
-
-  -webkit-box-shadow: inset 0 1px 0 rgb(109 40 217), inset 0 -3px 0 rgb(79 70 229);
-  -moz-box-shadow: inset 0 1px 0 rgb(109 40 217), inset 0 -3pxpx 0 rgb(79 70 229);
-  box-shadow: inset 0 1px 0 rgb(109 40 217), inset 0 -3px 0 rgb(79 70 229);
-}
-
-.button:after {
-  content: "";
-  height: 100%;
-  width: 105%;
-  padding: 4px;
+button.main::before {
   position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: #2b1800;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #a5b4fc;
+  border-radius: inherit;
+  -webkit-box-shadow: 0 0 0 2px #6366f1, 0 0.625em 0 0 #353839;
+  box-shadow: 0 0 0 2px #6366f1, 0 0.625em 0 0 #353839;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  .button:after {
-    background-color: #353839;
-  }
+button.main:hover {
+  background: #818cf8;
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+}
+
+button.main:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #6366f1, 0 0.5em 0 0 #353839;
+  box-shadow: 0 0 0 2px #6366f1, 0 0.5em 0 0 #353839;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.main:active {
+  background: #818cf8;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+}
+
+button.main:active::before {
+  -webkit-box-shadow: 0 0 0 2px #6366f1, 0 0 #353839;
+  box-shadow: 0 0 0 2px #6366f1, 0 0 #353839;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
 }
 
 #g-recaptcha-response {
@@ -221,13 +224,7 @@
                 data-sitekey="6LdJW2ooAAAAAJL0iElqcF1SlyrhvBQdVFyvEHLE"
               ></div>
               <div class="relative z-0 w-full mb-6 group">
-                <div class="button">
-                  <a
-                    class="bg-indigo-500 inline-flex items-center rounded-lg py-4 px-6 text-center text-base font-normal sm:px-10 lg:px-8 xl:px-10"
-                  >
-                    <button type="submit">Send</button>
-                  </a>
-                </div>
+                <button class="main text-dark-primary" type="submit">Send</button>
               </div>
             </form>
             <div>
