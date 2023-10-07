@@ -215,11 +215,11 @@ const cardTransform = computed(() => {
   cursor: pointer;
 }
 
-/* .fa-facebook:hover,
+.fa-facebook:hover,
 .fa-facebook:focus {
   color: #4267b2;
   transform: scale(1.1);
-} */
+}
 .fa-linkedin:hover,
 .fa-linkedin:focus {
   color: #0077b5;
