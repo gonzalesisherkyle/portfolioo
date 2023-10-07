@@ -72,18 +72,20 @@
   <section
     class="relative z-10 overflow-hidden bg-light-primary dark:bg-dark-primary py-20 lg:py-[120px]"
     id="contact"
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100,
-    }"
-    :visible="{
-      opacity: 1,
-      y: 0,
-    }"
   >
     <div class="container mx-auto">
-      <div class="-mx-4 flex flex-wrap lg:justify-between">
+      <div
+        class="-mx-4 flex flex-wrap lg:justify-between"
+        v-motion
+        :initial="{
+          opacity: 0,
+          y: 100,
+        }"
+        :visible="{
+          opacity: 1,
+          y: 0,
+        }"
+      >
         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
           <div class="mb-12 max-w-[570px] lg:mb-0">
             <span class="text-accent mb-4 block text-base font-semibold"> Contact Me 📞</span>

@@ -4,6 +4,7 @@
     id="portfolio"
   >
     <div
+      class="container mx-auto"
       v-motion
       :initial="{
         opacity: 0,
@@ -13,7 +14,6 @@
         opacity: 1,
         y: 0,
       }"
-      class="container mx-auto"
     >
       <div class="-m-4 flex flex-wrap justify-center">
         <div class="w-full px-4">
@@ -87,7 +87,7 @@
 <style scoped>
 .card {
   position: relative;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
   display: flex;
   padding: 10px 30px;
