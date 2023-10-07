@@ -41,6 +41,10 @@ module.exports = {
         green: colors.green,
         red: colors.red,
       },
+      backgroundImage: {
+        'ojtis': "url('/public/storage/projects/ojtis.png')",
+        'portfolio': "url('/public/storage/projects/portfolio.png')",
+      },
     },
   },
   plugins: [
