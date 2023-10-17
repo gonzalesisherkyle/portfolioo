@@ -711,9 +711,10 @@ button.main:active::before {
               Web Developer in the making.
             </h2>
             <p class="text-black dark:text-white mb-8 text-base">
-              What distinguishes me is not just my technical expertise in PHP and basic
-              understanding of JavaScript, but also my
-              <strong>commitment to collaborative working</strong>.
+              As a recent graduate with a Bachelor's degree in Information Technology and a passion
+              for web development, excited to kick start my career as a Laravel developer. My
+              academic foundation and hands-on experience have equipped me with the skills and
+              knowledge required to create robust and efficient web applications.
             </p>
             <p class="text-black dark:text-white mb-12 text-base">
               During my academic career, I played a big part in team projects, relying on excellent
