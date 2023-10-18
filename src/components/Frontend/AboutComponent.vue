@@ -712,7 +712,7 @@ button.main:active::before {
             </h2>
             <p class="text-black dark:text-white mb-8 text-base">
               As a recent graduate with a Bachelor's degree in Information Technology and a passion
-              for web development, excited to kick start my career as a Laravel developer. My
+              for web development, excited to kick start my career as a web developer. My
               academic foundation and hands-on experience have equipped me with the skills and
               knowledge required to create robust and efficient web applications.
             </p>
