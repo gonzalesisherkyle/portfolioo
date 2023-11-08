@@ -72,6 +72,16 @@ const cardTransform = computed(() => {
                   <i class="fab fa-github"></i>
                 </a>
               </div>
+              <div class="mr-4 w-auto py-3">
+                <a href="https://www.hackerrank.com/profile/ikmgonzales" target="_blank">
+                  <i class="fab fa-hackerrank"></i>
+                </a>
+              </div>
+              <div class="mr-4 w-auto py-3">
+                <a href="https://www.freecodecamp.org/ikmgonzales" target="_blank">
+                  <i class="fab fa-free-code-camp"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -220,11 +230,24 @@ button.main:active::before {
 
 .fa-facebook,
 .fa-github,
-.fa-linkedin {
+.fa-linkedin,
+.fa-hackerrank,
+.fa-free-code-camp {
   transition: 0.4s;
   cursor: pointer;
 }
 
+.fa-free-code-camp:hover,
+.fa-free-code-camp:focus {
+  color: #3b3b4f;
+  transform: scale(1.1);
+}
+
+.fa-hackerrank:hover,
+.fa-hackerrank:focus {
+  color: #50c878;
+  transform: scale(1.1);
+}
 .fa-facebook:hover,
 .fa-facebook:focus {
   color: #4267b2;
