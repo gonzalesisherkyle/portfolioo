@@ -225,7 +225,7 @@ button.main:active::before {
 }
 
 .fab {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .fa-facebook,

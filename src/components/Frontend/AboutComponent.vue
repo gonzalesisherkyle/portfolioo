@@ -721,8 +721,11 @@ button.main:active::before {
               communication and motivation to accomplish successful outcomes. I was the lead
               programmer on our capstone project, which I consider a remarkable accomplishment.
             </p>
-            <a href="/storage/files/Resume.pdf" download>
-              <button class="main text-dark-primary">Download CV</button>
+            <a
+              href="https://drive.google.com/file/d/1x7v8QaQed_nOJFwb878cY7gxQ4waqTfk/view?usp=sharing"
+              target="_blank"
+            >
+              <button class="main text-dark-primary">View resume</button>
             </a>
           </div>
         </div>
