@@ -712,16 +712,16 @@ button.main:active::before {
             </h2>
             <p class="text-black dark:text-white mb-8 text-base">
               As a recent graduate with a Bachelor's degree in Information Technology and a passion
-              for web development, excited to kick start my career as a web developer. My
-              academic foundation and hands-on experience have equipped me with the skills and
-              knowledge required to create robust and efficient web applications.
+              for web development, excited to kick start my career as a web developer. My academic
+              foundation and hands-on experience have equipped me with the skills and knowledge
+              required to create robust and efficient web applications.
             </p>
             <p class="text-black dark:text-white mb-12 text-base">
               During my academic career, I played a big part in team projects, relying on excellent
               communication and motivation to accomplish successful outcomes. I was the lead
               programmer on our capstone project, which I consider a remarkable accomplishment.
             </p>
-            <a href="/storage/files/CV.pdf" download>
+            <a href="/storage/files/Resume.pdf" download>
               <button class="main text-dark-primary">Download CV</button>
             </a>
           </div>
