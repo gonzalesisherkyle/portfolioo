@@ -58,27 +58,52 @@ const cardTransform = computed(() => {
           <div class="socials pt-10">
             <div class="flex gap-x-5 justify-start">
               <div class="mr-4 w-auto py-3">
-                <a href="https://www.facebook.com/aysiyer/" target="_blank">
+                <a
+                  href="https://www.facebook.com/aysiyer/"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="Facebook"
+                >
                   <i class="fab fa-facebook"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
-                <a href="https://www.linkedin.com/in/ikmgonzales/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/ikmgonzales/"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="LinkedIn"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
-                <a href="https://github.com/gonzalesisherkyle" target="_blank">
+                <a
+                  href="https://github.com/gonzalesisherkyle"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="GitHub"
+                >
                   <i class="fab fa-github"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
-                <a href="https://www.hackerrank.com/profile/ikmgonzales" target="_blank">
+                <a
+                  href="https://www.hackerrank.com/profile/ikmgonzales"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="HackerRank"
+                >
                   <i class="fab fa-hackerrank"></i>
                 </a>
               </div>
               <div class="mr-4 w-auto py-3">
-                <a href="https://www.freecodecamp.org/ikmgonzales" target="_blank">
+                <a
+                  href="https://www.freecodecamp.org/ikmgonzales"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="freeCodeCamp"
+                >
                   <i class="fab fa-free-code-camp"></i>
                 </a>
               </div>
